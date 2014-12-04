@@ -19,7 +19,7 @@ for spec in ${SOURCES}/*.spec; do
     spectool -g $pkg.spec
     cp *.dap $RPMBUILDDIR/SOURCES
     rm $RPMBUILDDIR/SRPMS/$pkg*src.rpm
-    rpmbuild -bs $pkg.spec
+    rpmbuild -bs $pkg.spec || return 1
     cp $RPMBUILDDIR/SRPMS/$pkg*src.rpm $RESULTS
 
     rm -f *

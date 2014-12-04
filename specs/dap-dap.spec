@@ -7,7 +7,7 @@ Summary:        Assistants for creating DAPs - DevAssistant packages
 
 License:        GPLv2+
 URL:            https://github.com/devassistant/dap-dap
-Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.%{name}
+Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.dap
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
