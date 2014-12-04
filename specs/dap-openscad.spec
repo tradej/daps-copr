@@ -7,7 +7,7 @@ Summary:        Create 3D printing projects for OpenSCAD
 
 License:        GPLv3+ and GPLv2 with exceptions
 URL:            https://github.com/3DprintFIT/dap-openscad
-Source0:        https://dapi.devassistant.org/download/%{name}-%{version}.dap
+Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.dap
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui

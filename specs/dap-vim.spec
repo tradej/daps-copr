@@ -7,7 +7,7 @@ Summary:        Vim snippet and assistant
 
 License:        GPLv2+
 URL:            https://github.com/devassistant/dap-vim
-Source0:        https://dapi.devassistant.org/download/%{name}-%{version}.dap
+Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.dap
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
