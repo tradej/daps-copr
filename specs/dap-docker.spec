@@ -28,5 +28,5 @@ Runs a Docker container for your project, mounting your source code in.
 %{assistant_path}/assistants/twk/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
 Initial package

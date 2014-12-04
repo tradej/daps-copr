@@ -34,5 +34,5 @@ arbitrary custom commands that will run on your machine.
 %{assistant_path}/assistants/prep/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
 Initial package

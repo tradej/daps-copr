@@ -31,5 +31,5 @@ Set up environment for DevAssistant, so you can develop on DevAssistant trough D
 %{assistant_path}/assistants/prep/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.1dev-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.1dev-1
 Initial package

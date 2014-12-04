@@ -27,5 +27,5 @@ Snippet that runs tito init in assistants, where you want it
 %{assistant_path}/snippets/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
 Initial package

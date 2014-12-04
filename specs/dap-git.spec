@@ -27,5 +27,5 @@ Git snippet, allowing to initialize a git repo and commit everything.
 %{assistant_path}/snippets/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
 Initial package

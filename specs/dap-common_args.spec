@@ -32,5 +32,5 @@ Arguments "github" and "gh_fork" are now provided by the assistant
 %{assistant_path}/snippets/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
 Initial package

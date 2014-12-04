@@ -29,5 +29,5 @@ Installs and configures vim. Works as a mod assistant or a snippet, so you can u
 %{assistant_path}/snippets/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0dev-1
 Initial package

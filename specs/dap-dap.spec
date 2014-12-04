@@ -35,5 +35,5 @@ the assistants as .dap file.
 %{assistant_path}/snippets/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.0.5-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.0.5-1
 Initial package

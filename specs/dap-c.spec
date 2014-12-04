@@ -34,5 +34,5 @@ Kickstarts new C project and more C related assistants
 %{assistant_path}/assistants/twk/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
 Initial package

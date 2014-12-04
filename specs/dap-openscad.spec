@@ -36,5 +36,5 @@ Observe the generated `Makefile` to see all available options.
 %{assistant_path}/assistants/crt/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.0.2-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.0.2-1
 Initial package

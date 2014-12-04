@@ -34,5 +34,5 @@ Currently supports Maven and JavaServer Faces projects.
 %{assistant_path}/assistants/crt/%{shortname}*
 
 %changelog
-Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
+* Thu Dec 04 2014 tradej <tradej@redhat.com> - 0.10.0-1
 Initial package
