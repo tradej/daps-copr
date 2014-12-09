@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SOURCES=$PWD/specs/
-RESULTS=$PWD/daps/
+RESULTS=$PWD/rpms/
 TMP=$PWD/tmp/
 RPMBUILDDIR=~/rpmbuild/
 
