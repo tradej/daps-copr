@@ -37,12 +37,13 @@ the assistants as .dap file.
 
 %files
 %doc %{assistant_path}/doc/%{shortname}
-%{assistant_path}/icons/%{shortname}
 %{assistant_path}/assistants/crt/%{shortname}*
 %{assistant_path}/assistants/twk/%{shortname}*
+%{assistant_path}/icons/crt/%{shortname}*
+%{assistant_path}/icons/twk/%{shortname}*
 %{assistant_path}/snippets/%{shortname}*
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
-* Tue Dec 09 2014 Tomas Radej <tradej@redhat.com> - 0.0.5-1
+* Wed Dec 10 2014 Tomas Radej <tradej@redhat.com> - 0.0.5-1
 Initial package
