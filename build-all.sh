@@ -16,9 +16,9 @@ for spec in ${SOURCES}/*.spec; do
     echo Rebuilding $pkg
     cp $spec .
 
-    spectool -g $pkg.spec
+    spectool -g $pkg.spec &> /dev/null
     cp *.dap $RPMBUILDDIR/SOURCES
-    rm $RPMBUILDDIR/SRPMS/$pkg*src.rpm
+    rm $RPMBUILDDIR/SRPMS/$pkg*src.rpm 2> /dev/null
     rpmbuild -bs $pkg.spec || return 1
     cp $RPMBUILDDIR/SRPMS/$pkg*src.rpm $RESULTS
 
