@@ -1,6 +1,6 @@
 %global shortname perl
 
-Name:           dap-%{shortname}
+Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
 Release:        1%{?dist}
 Summary:        Perl assistants
@@ -13,10 +13,10 @@ Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.d
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
-Requires:       dap-common_args
-Requires:       dap-git
-Requires:       dap-github
-Requires:       dap-vim
+Requires:       devassistant-dap-common_args
+Requires:       devassistant-dap-git
+Requires:       devassistant-dap-github
+Requires:       devassistant-dap-vim
 
 %description
 Kickstarts new Perl projects.
@@ -34,13 +34,8 @@ Kickstarts new Perl projects.
 %check
 %check_assistant
 
-%files
-%doc %{assistant_path}/doc/%{shortname}
-%{assistant_path}/assistants/crt/%{shortname}*
-%{assistant_path}/files/crt/%{shortname}*
-%{assistant_path}/icons/crt/%{shortname}*
-%{assistant_path}/meta/%{shortname}.yaml
+%files -f dap-files
 
 %changelog
-* Wed Dec 10 2014 Tomas Radej <tradej@redhat.com> - 0.10.0-1
+* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-1
 Initial package

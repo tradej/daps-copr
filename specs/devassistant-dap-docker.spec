@@ -1,6 +1,6 @@
 %global shortname docker
 
-Name:           dap-%{shortname}
+Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
 Release:        1%{?dist}
 Summary:        Docker assistant
@@ -13,7 +13,7 @@ Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.d
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
-Requires:       dap-common_args
+Requires:       devassistant-dap-common_args
 
 %description
 Runs a Docker container for your project, mounting your source code in.
@@ -31,11 +31,8 @@ Runs a Docker container for your project, mounting your source code in.
 %check
 %check_assistant
 
-%files
-%doc %{assistant_path}/doc/%{shortname}
-%{assistant_path}/assistants/twk/%{shortname}*
-%{assistant_path}/meta/%{shortname}.yaml
+%files -f dap-files
 
 %changelog
-* Tue Dec 09 2014 Tomas Radej <tradej@redhat.com> - 0.10.0dev-1
+* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-1
 Initial package

@@ -1,6 +1,6 @@
 %global shortname devassistant
 
-Name:           dap-%{shortname}
+Name:           devassistant-dap-%{shortname}
 Version:        0.10.1dev
 Release:        1%{?dist}
 Summary:        DevAssistant prep assistants to develop DevAssistant itself
@@ -13,10 +13,10 @@ Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.d
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
-Requires:       dap-common_args
-Requires:       dap-git
-Requires:       dap-github
-Requires:       dap-python
+Requires:       devassistant-dap-common_args
+Requires:       devassistant-dap-git
+Requires:       devassistant-dap-github
+Requires:       devassistant-dap-python
 
 %description
 Set up environment for DevAssistant, so you can develop on DevAssistant trough DevAssistant. We have to go deeper.
@@ -34,11 +34,8 @@ Set up environment for DevAssistant, so you can develop on DevAssistant trough D
 %check
 %check_assistant
 
-%files
-%doc %{assistant_path}/doc/%{shortname}
-%{assistant_path}/assistants/prep/%{shortname}*
-%{assistant_path}/meta/%{shortname}.yaml
+%files -f dap-files
 
 %changelog
-* Tue Dec 09 2014 Tomas Radej <tradej@redhat.com> - 0.10.1dev-1
+* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.1dev-1
 Initial package

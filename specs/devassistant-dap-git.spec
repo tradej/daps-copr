@@ -1,6 +1,6 @@
 %global shortname git
 
-Name:           dap-%{shortname}
+Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
 Release:        1%{?dist}
 Summary:        Git snippet to be used from other assistants
@@ -30,11 +30,8 @@ Git snippet, allowing to initialize a git repo and commit everything.
 %check
 %check_assistant
 
-%files
-%doc %{assistant_path}/doc/%{shortname}
-%{assistant_path}/snippets/%{shortname}*
-%{assistant_path}/meta/%{shortname}.yaml
+%files -f dap-files
 
 %changelog
-* Tue Dec 09 2014 Tomas Radej <tradej@redhat.com> - 0.10.0dev-1
+* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-1
 Initial package
