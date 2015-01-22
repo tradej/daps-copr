@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Eclipse snippet and assistant
 
 BuildArch:      noarch
@@ -15,8 +15,8 @@ BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
 Requires:       devassistant-dap-common_args
 
-Provides:       dap-%{shortname}-%{release} = %{version}-%{release}
-Obsoletes:      dap-%{shortname}-%{release} < %{version}-%{release}
+Provides:       dap-%{shortname} = %{version}-%{release}
+Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 Installs and configures eclipse. Works as a mod assistant or a snippet, so you can use it form other assistants.
@@ -37,6 +37,9 @@ Installs and configures eclipse. Works as a mod assistant or a snippet, so you c
 %files -f dap-files
 
 %changelog
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-3
+Fixed Provides and Obsoletes
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-2
 Obsoletes: old pkg name
 

@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Custom prep assistants to develop on an upstream project
 
 BuildArch:      noarch
@@ -16,8 +16,8 @@ Requires:       devassistant-ui
 Requires:       devassistant-dap-common_args
 Requires:       devassistant-dap-github
 
-Provides:       dap-%{shortname}-%{release} = %{version}-%{release}
-Obsoletes:      dap-%{shortname}-%{release} < %{version}-%{release}
+Provides:       dap-%{shortname} = %{version}-%{release}
+Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 The custom assistant sets up environment for developing custom project
@@ -43,6 +43,9 @@ arbitrary custom commands that will run on your machine.
 %files -f dap-files
 
 %changelog
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-3
+Fixed Provides and Obsoletes
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-2
 Obsoletes: old pkg name
 
