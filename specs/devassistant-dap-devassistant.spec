@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.1dev
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        DevAssistant prep assistants to develop DevAssistant itself
 
 BuildArch:      noarch
@@ -17,6 +17,9 @@ Requires:       devassistant-dap-common_args
 Requires:       devassistant-dap-git
 Requires:       devassistant-dap-github
 Requires:       devassistant-dap-python
+
+Provides:       dap-%{shortname}-%{release} = %{version}-%{release}
+Obsoletes:      dap-%{shortname}-%{release} < %{version}-%{release}
 
 %description
 Set up environment for DevAssistant, so you can develop on DevAssistant trough DevAssistant. We have to go deeper.
@@ -37,5 +40,8 @@ Set up environment for DevAssistant, so you can develop on DevAssistant trough D
 %files -f dap-files
 
 %changelog
+* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.1dev-2
+Obsoletes: old pkg name
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.1dev-1
 Initial package

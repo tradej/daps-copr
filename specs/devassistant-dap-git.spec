@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Git snippet to be used from other assistants
 
 BuildArch:      noarch
@@ -13,6 +13,9 @@ Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.d
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
+
+Provides:       dap-%{shortname}-%{release} = %{version}-%{release}
+Obsoletes:      dap-%{shortname}-%{release} < %{version}-%{release}
 
 %description
 Git snippet, allowing to initialize a git repo and commit everything.
@@ -33,5 +36,8 @@ Git snippet, allowing to initialize a git repo and commit everything.
 %files -f dap-files
 
 %changelog
+* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-2
+Obsoletes: old pkg name
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-1
 Initial package

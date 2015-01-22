@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        C assistants
 
 BuildArch:      noarch
@@ -18,6 +18,9 @@ Requires:       devassistant-dap-eclipse
 Requires:       devassistant-dap-git
 Requires:       devassistant-dap-github
 Requires:       devassistant-dap-vim
+
+Provides:       dap-%{shortname}-%{release} = %{version}-%{release}
+Obsoletes:      dap-%{shortname}-%{release} < %{version}-%{release}
 
 %description
 Kickstarts new C project and more C related assistants
@@ -38,5 +41,8 @@ Kickstarts new C project and more C related assistants
 %files -f dap-files
 
 %changelog
+* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-2
+Obsoletes: old pkg name
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-1
 Initial package
