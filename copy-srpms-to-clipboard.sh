@@ -8,14 +8,14 @@ fi
 PREFIX="$1"
 
 DAPS=$(
-for dap in $(ls specs); do
+for dap in $(ls rpms); do
     echo $PREFIX/$dap
 done
 )
 
 if [ ! $(which xsel) ]; then
-    echo $DAPS
+    echo -e $DAPS
 else
-    echo $DAPS | xsel
+    echo -e $DAPS | xsel
     echo 'Names copied to X clipboard'
 fi
