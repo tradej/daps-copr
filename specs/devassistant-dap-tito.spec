@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Tito snippet to use in other assistants
 
 BuildArch:      noarch
@@ -13,6 +13,9 @@ Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.d
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
+
+Provides:       dap-%{shortname} = %{version}-%{release}
+Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 Snippet that runs tito init in assistants, where you want it
@@ -33,5 +36,8 @@ Snippet that runs tito init in assistants, where you want it
 %files -f dap-files
 
 %changelog
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-2
+Obsoletes old pkg name
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-1
 Initial package

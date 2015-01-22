@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Python assistants (library, Django, Flask, GTK3)
 
 BuildArch:      noarch
@@ -19,6 +19,9 @@ Requires:       devassistant-dap-git
 Requires:       devassistant-dap-github
 Requires:       devassistant-dap-tito
 Requires:       devassistant-dap-vim
+
+Provides:       dap-%{shortname} = %{version}-%{release}
+Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 Set of crt assistants for Python. Contains assistants that let you
@@ -41,5 +44,8 @@ Supports both Python 2 and 3.
 %files -f dap-files
 
 %changelog
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-2
+Obsoletes old pkg name
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-1
 Initial package

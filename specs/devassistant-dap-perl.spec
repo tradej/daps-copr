@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Perl assistants
 
 BuildArch:      noarch
@@ -17,6 +17,9 @@ Requires:       devassistant-dap-common_args
 Requires:       devassistant-dap-git
 Requires:       devassistant-dap-github
 Requires:       devassistant-dap-vim
+
+Provides:       dap-%{shortname} = %{version}-%{release}
+Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 Kickstarts new Perl projects.
@@ -37,5 +40,8 @@ Kickstarts new Perl projects.
 %files -f dap-files
 
 %changelog
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-2
+Obsoletes old pkg name
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-1
 Initial package

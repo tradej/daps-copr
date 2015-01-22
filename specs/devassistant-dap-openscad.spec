@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.0.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Create 3D printing projects for OpenSCAD
 
 BuildArch:      noarch
@@ -16,6 +16,9 @@ Requires:       devassistant-ui
 Requires:       devassistant-dap-common_args
 Requires:       devassistant-dap-git
 Requires:       devassistant-dap-github
+
+Provides:       dap-%{shortname} = %{version}-%{release}
+Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 This assistants helps you to create new OpenSCAD project for 3D printing.
@@ -41,5 +44,8 @@ Observe the generated `Makefile` to see all available options.
 %files -f dap-files
 
 %changelog
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.0.2-2
+Obsoletes old pkg name
+
 * Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.0.2-1
 Initial package
