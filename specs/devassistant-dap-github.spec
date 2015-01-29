@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        GitHub assistant
 
 BuildArch:      noarch
@@ -15,9 +15,6 @@ BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
 Requires:       devassistant-dap-common_args
 Requires:       devassistant-dap-git
-
-Provides:       dap-%{shortname} = %{version}-%{release}
-Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 Creates GitHub repository (+ local git repository if not already created)
@@ -43,11 +40,5 @@ to outside assistants
 %files -f dap-files
 
 %changelog
-* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-3
-Fixed Provides and Obsoletes
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-2
-Obsoletes: old pkg name
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-1
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-4
 Initial package

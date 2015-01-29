@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Docker assistant
 
 BuildArch:      noarch
@@ -14,9 +14,6 @@ Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.d
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
 Requires:       devassistant-dap-common_args
-
-Provides:       dap-%{shortname} = %{version}-%{release}
-Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 Runs a Docker container for your project, mounting your source code in.
@@ -37,11 +34,5 @@ Runs a Docker container for your project, mounting your source code in.
 %files -f dap-files
 
 %changelog
-* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-3
-Fixed Provides and Obsoletes
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-2
-Obsoletes: old pkg name
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-1
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-4
 Initial package

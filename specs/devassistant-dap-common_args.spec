@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Common arguments to be used from other assistants
 
 BuildArch:      noarch
@@ -13,9 +13,6 @@ Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.d
 
 BuildRequires:  devassistant-devel
 Requires:       devassistant-ui
-
-Provides:       dap-%{shortname} = %{version}-%{release}
-Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 Common arguments used in most of the assistants.
@@ -41,11 +38,5 @@ Arguments "github" and "gh_fork" are now provided by the assistant
 %files -f dap-files
 
 %changelog
-* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-3
-Fixed Provides and Obsoletes
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-2
-Obsoletes: old pkg name
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-1
+* Thu Jan 29 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
 Initial package

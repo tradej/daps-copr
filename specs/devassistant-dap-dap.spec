@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.0.5
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Assistants for creating DAPs - DevAssistant packages
 
 BuildArch:      noarch
@@ -16,9 +16,6 @@ Requires:       devassistant-ui
 Requires:       devassistant-dap-common_args
 Requires:       devassistant-dap-git
 Requires:       devassistant-dap-github
-
-Provides:       dap-%{shortname} = %{version}-%{release}
-Obsoletes:      dap-%{shortname} < %{version}-%{release}
 
 %description
 This assistants helps you with creating DAPs - DevAssistant packages.
@@ -41,11 +38,5 @@ the assistants as .dap file.
 %files -f dap-files
 
 %changelog
-* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-3
-Fixed Provides and Obsoletes
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-2
-Obsoletes: old pkg name
-
-* Wed Jan 21 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-1
+* Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-4
 Initial package
