@@ -7,6 +7,6 @@ rm $SPECDIR/*
 
 for pkg in $(cat $PKGLIST); do
     echo $pkg
-    dap2rpm $pkg > $SPECDIR/dap-$pkg.spec
+    dap2rpm $pkg > $SPECDIR/devassistant-dap-$pkg.spec
 done
 
