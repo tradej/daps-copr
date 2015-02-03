@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.1dev
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        DevAssistant prep assistants to develop DevAssistant itself
 
 BuildArch:      noarch
@@ -35,7 +35,11 @@ Set up environment for DevAssistant, so you can develop on DevAssistant trough D
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.1dev-5
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.1dev-4
 Initial package

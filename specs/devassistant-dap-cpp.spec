@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        C++ assistants
 
 BuildArch:      noarch
@@ -36,7 +36,12 @@ Kickstarts new C++ projects
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
+%license %{assistant_path}/doc/%{shortname}/NOTICE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
 Initial package

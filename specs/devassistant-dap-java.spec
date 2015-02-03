@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Java assistants
 
 BuildArch:      noarch
@@ -37,7 +37,12 @@ Currently supports Maven and JavaServer Faces projects.
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
+%license %{assistant_path}/doc/%{shortname}/NOTICE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-3
 Initial package

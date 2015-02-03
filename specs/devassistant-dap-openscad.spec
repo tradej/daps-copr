@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.0.2
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Create 3D printing projects for OpenSCAD
 
 BuildArch:      noarch
@@ -39,7 +39,12 @@ Observe the generated `Makefile` to see all available options.
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
+%license %{assistant_path}/doc/%{shortname}/LICENSE.ICON
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.0.2-4
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.0.2-3
 Initial package

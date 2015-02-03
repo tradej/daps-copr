@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Python assistants (library, Django, Flask, GTK3)
 
 BuildArch:      noarch
@@ -39,7 +39,12 @@ Supports both Python 2 and 3.
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
+%license %{assistant_path}/doc/%{shortname}/NOTICE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-4
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-3
 Initial package

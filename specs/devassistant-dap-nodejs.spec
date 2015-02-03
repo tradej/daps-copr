@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Node.js assistants
 
 BuildArch:      noarch
@@ -35,7 +35,11 @@ Kickstarts new Node.js projects with or without the Express framework.
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-4
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-3
 Initial package

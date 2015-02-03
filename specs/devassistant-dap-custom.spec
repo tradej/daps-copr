@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Custom prep assistants to develop on an upstream project
 
 BuildArch:      noarch
@@ -38,7 +38,11 @@ arbitrary custom commands that will run on your machine.
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
 Initial package

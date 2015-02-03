@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Git snippet to be used from other assistants
 
 BuildArch:      noarch
@@ -31,7 +31,11 @@ Git snippet, allowing to initialize a git repo and commit everything.
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-5
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-4
 Initial package

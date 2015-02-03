@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Common arguments to be used from other assistants
 
 BuildArch:      noarch
@@ -36,7 +36,11 @@ Arguments "github" and "gh_fork" are now provided by the assistant
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
+Marked licensing files as %license
+
 * Thu Jan 29 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
 Initial package

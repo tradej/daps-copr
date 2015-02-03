@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.0.5
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Assistants for creating DAPs - DevAssistant packages
 
 BuildArch:      noarch
@@ -36,7 +36,11 @@ the assistants as .dap file.
 %check_assistant
 
 %files -f dap-files
+%license %{assistant_path}/doc/%{shortname}/LICENSE
 
 %changelog
+* Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-5
+Marked licensing files as %license
+
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-4
 Initial package
