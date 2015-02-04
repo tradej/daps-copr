@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        Eclipse snippet and assistant
 
 BuildArch:      noarch
@@ -16,7 +16,8 @@ Requires:       devassistant-ui
 Requires:       devassistant-dap-common_args
 
 %description
-Installs and configures eclipse. Works as a mod assistant or a snippet, so you can use it form other assistants.
+Installs and configures eclipse. Works as a mod assistant or a snippet, so you
+can use it form other assistants.
 
 
 %prep
@@ -40,6 +41,9 @@ Installs and configures eclipse. Works as a mod assistant or a snippet, so you c
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-7
+Text-wrapped description
+
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-6
 Verbose files section
 

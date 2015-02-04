@@ -2,13 +2,13 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Python assistants (library, Django, Flask, GTK3)
 
 BuildArch:      noarch
 
 License:        GPLv2+
-URL:            https://github.com/bkabrda/dap-python
+URL:            https://github.com/devassistant/dap-python
 Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.dap
 
 BuildRequires:  devassistant-devel
@@ -49,6 +49,9 @@ Supports both Python 2 and 3.
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-6
+Fixed URL
+
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.1-5
 Verbose files section
 

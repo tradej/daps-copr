@@ -1,8 +1,11 @@
 %global shortname perl
+%global __requires_exclude ^perl.*$
+%global __provides_exclude ^perl.*$
+
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Perl assistants
 
 BuildArch:      noarch
@@ -44,6 +47,9 @@ Kickstarts new Perl projects.
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-6
+Filtering Perl provides/requires
+
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
 Verbose files section
 

@@ -2,11 +2,12 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.0.2
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Create 3D printing projects for OpenSCAD
 
 BuildArch:      noarch
 
+# Icon is GPL2 with exceptions, everything else is GPLv3+
 License:        GPLv3+ and GPLv2 with exceptions
 URL:            https://github.com/3DprintFIT/dap-openscad
 Source0:        https://dapi.devassistant.org/download/%{shortname}-%{version}.dap
@@ -21,9 +22,10 @@ Requires:       devassistant-dap-github
 This assistants helps you to create new OpenSCAD project for 3D printing.
 We use it in our 3D printing lab to store our 3D printers on Github.
 
-Projects created with this assistant have a `Makefile` to build the 3D models form OpenSCAD sources.
-To do so, run `make`. You can also generate the images by `make images` or print plates with `make arrange`.
-Observe the generated `Makefile` to see all available options.
+Projects created with this assistant have a `Makefile` to build the 3D models
+form OpenSCAD sources.  To do so, run `make`. You can also generate the images
+by `make images` or print plates with `make arrange`.  Observe the generated
+`Makefile` to see all available options.
 
 
 %prep
@@ -48,6 +50,10 @@ Observe the generated `Makefile` to see all available options.
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.0.2-6
+Added licensing clarification
+Text-wrapped description
+
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.0.2-5
 Verbose files section
 
