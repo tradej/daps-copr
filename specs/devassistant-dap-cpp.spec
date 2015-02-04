@@ -46,10 +46,10 @@ Kickstarts new C++ projects
 
 %changelog
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-6
-Verbose %files section
+Verbose files section
 
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
-Marked licensing files as %license
+Marked licensing files with proper macro
 
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
 Initial package

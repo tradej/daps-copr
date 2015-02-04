@@ -41,10 +41,10 @@ Installs and configures eclipse. Works as a mod assistant or a snippet, so you c
 
 %changelog
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-6
-Verbose %files section
+Verbose files section
 
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-5
-Marked licensing files as %license
+Marked licensing files with proper macro
 
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-4
 Initial package

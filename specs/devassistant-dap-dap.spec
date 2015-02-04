@@ -46,10 +46,10 @@ the assistants as .dap file.
 
 %changelog
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-6
-Verbose %files section
+Verbose files section
 
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-5
-Marked licensing files as %license
+Marked licensing files with proper macro
 
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-4
 Initial package

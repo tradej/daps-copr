@@ -38,10 +38,10 @@ Snippet that runs tito init in assistants, where you want it
 
 %changelog
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-5
-Verbose %files section
+Verbose files section
 
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-4
-Marked licensing files as %license
+Marked licensing files with proper macro
 
 * Thu Jan 22 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-3
 Initial package
