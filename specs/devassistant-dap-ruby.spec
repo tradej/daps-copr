@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Ruby assistants
 
 BuildArch:      noarch
@@ -43,6 +43,9 @@ Kickstarts new Ruby projects. Currently only supports Ruby on Rails.
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
+Verbose %files section
+
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
 Marked licensing files as %license
 

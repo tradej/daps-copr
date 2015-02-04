@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Vim snippet and assistant
 
 BuildArch:      noarch
@@ -40,6 +40,9 @@ Installs and configures vim. Works as a mod assistant or a snippet, so you can u
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-5
+Verbose %files section
+
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-4
 Marked licensing files as %license
 

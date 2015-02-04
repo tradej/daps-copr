@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        C assistants
 
 BuildArch:      noarch
@@ -46,6 +46,9 @@ Kickstarts new C project and more C related assistants
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-6
+Verbose %files section
+
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
 Marked licensing files as %license
 

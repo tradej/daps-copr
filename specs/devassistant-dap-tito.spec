@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0dev
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Tito snippet to use in other assistants
 
 BuildArch:      noarch
@@ -37,6 +37,9 @@ Snippet that runs tito init in assistants, where you want it
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-5
+Verbose %files section
+
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0dev-4
 Marked licensing files as %license
 
