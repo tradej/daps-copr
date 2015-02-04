@@ -2,7 +2,7 @@
 
 Name:           devassistant-dap-%{shortname}
 Version:        0.10.0
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        C assistants
 
 BuildArch:      noarch
@@ -43,9 +43,13 @@ Kickstarts new C project and more C related assistants
 %{assistant_path}/assistants/twk/%{shortname}*
 %{assistant_path}/files/crt/%{shortname}*
 %{assistant_path}/icons/crt/%{shortname}*
+%{assistant_path}/icons/twk/%{shortname}*
 %{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
+* Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-7
+Added missing line into the files section
+
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-6
 Verbose files section
 
