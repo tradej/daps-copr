@@ -20,7 +20,7 @@ Requires:       devassistant-dap-github
 Requires:       devassistant-dap-vim
 
 %description
-Kickstarts new Perl projects.
+Kickstarts new PHP projects and configures LAMP.
 
 
 %prep
@@ -47,7 +47,7 @@ Kickstarts new Perl projects.
 %changelog
 * Wed Feb 04 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-5
 Verbose files section
-Fixed summary and description
+Fixed summary
 
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.10.0-4
 Marked licensing files with proper macro
