@@ -35,8 +35,14 @@ the assistants as .dap file.
 %check
 %check_assistant
 
-%files -f dap-files
+%files
 %license %{assistant_path}/doc/%{shortname}/LICENSE
+%dir %{assistant_path}/doc/%{shortname}
+%{assistant_path}/assistants/crt/%{shortname}*
+%{assistant_path}/assistants/twk/%{shortname}*
+%{assistant_path}/icons/crt/%{shortname}*
+%{assistant_path}/snippets/%{shortname}*
+%{assistant_path}/meta/%{shortname}.yaml
 
 %changelog
 * Tue Feb 03 2015 Tomas Radej <tradej@redhat.com> - 0.0.5-5
